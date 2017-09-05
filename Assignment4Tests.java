@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
-/**
- * @author nadav
- */
+
 public class Assignment4Tests {
 
     public static void main(String[] args) {
@@ -30,14 +28,14 @@ public class Assignment4Tests {
         Test(true, checkLeavesLevel(firstTree), "Insert - Test 5 of 8", "found leaves not in the same depth");
 
         //same test as the previous but with more nodes.
-      /*  BTree SecondTree = new BTree(15);
+        BTree SecondTree = new BTree(15);
         initTree(SecondTree, 10000);
         ArrayList<Integer> arrayListSecond = inorder(new ArrayList<>(), SecondTree.getRoot());
         ArrayList<Integer> expectedSecond = getIntegers(10001);
         Test(expectedSecond, arrayListSecond, "Insert - Test 6 of 8", "keys are in the wrong place in the tree");
         Test(true, checkDegree(SecondTree, SecondTree.getRoot()), "Insert - Test 7 of 8", "found nodes with less than t-1 blocks or with more than 2t-1 blocks");
         Test(true, checkNumOfChildren(SecondTree, SecondTree.getRoot()), "Insert - Test 8 of 8", "found nodes with less or more than numOfBlocks+1 children");
-*/
+
     }
 
     private static void testSearch() {
